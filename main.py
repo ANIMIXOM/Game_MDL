@@ -10,5 +10,9 @@ def game():
 def home():
     return "<a href='/game'>Переход...</a>"
 
+@app.route("/end")
+def end():
+    return "Конец!"
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
