@@ -12,7 +12,7 @@ def home():
 
 @app.route("/end")
 def end():
-    return "Конец!"
+    return """<a href='/'>Повторить?</a>"""
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
